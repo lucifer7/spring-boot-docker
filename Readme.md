@@ -89,9 +89,9 @@ Solution: Check if daemon server is startup in secure mode. This error may occur
 Check images:
 > docker image
 
-(Requires tls secure by default configuration, or use "docker --tlsverify --tlscacert=ca.pem --tlscert=cert.pem --tlskey=key.pem   -H=$HOST:2376 ps" instead)
+(Requires tls secure by default configuration, or use "docker --tlsverify --tlscacert=ca.pem --tlscert=cert.pem --tlskey=key.pem   -H=$HOST:2376 image" instead)
 
-Start up with sepecified name (_spring-boot_) and port mapping(visit 8080 of host to reach 8080 of container):
+Start up with specified name (_spring-boot_) and port mapping(visit 8080 of host to reach 8080 of container):
 > docker run --name spring-boot -d -p 8080:8080 skyvoice/spring-boot-docker
 
 Visit http://your-docker-host:8080/docker to check result.
